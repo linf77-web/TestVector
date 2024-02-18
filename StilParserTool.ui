@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StilParserTool</class>
+ <widget class="QMainWindow" name="StilParserTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1640</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1640</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1640</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WaveFormView</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1600</width>
+         <height>846</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>1600</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1600</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="Open"/>
+   <addaction name="Analyse"/>
+   <addaction name="separator"/>
+   <addaction name="Previous"/>
+   <addaction name="Next"/>
+   <addaction name="separator"/>
+   <addaction name="Larger"/>
+   <addaction name="Smaller"/>
+   <addaction name="separator"/>
+   <addaction name="Normal"/>
+   <addaction name="Period"/>
+  </widget>
+  <action name="Open">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="Analyse">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>解析</string>
+   </property>
+  </action>
+  <action name="Previous">
+   <property name="icon">
+    <iconset resource="other/qss.qrc">
+     <normaloff>:/image/previous.png</normaloff>:/image/previous.png</iconset>
+   </property>
+   <property name="text">
+    <string>前一页</string>
+   </property>
+   <property name="toolTip">
+    <string>前一页</string>
+   </property>
+  </action>
+  <action name="Next">
+   <property name="icon">
+    <iconset resource="other/qss.qrc">
+     <normaloff>:/image/next.png</normaloff>:/image/next.png</iconset>
+   </property>
+   <property name="text">
+    <string>后一页</string>
+   </property>
+   <property name="toolTip">
+    <string>后一页</string>
+   </property>
+  </action>
+  <action name="Larger">
+   <property name="icon">
+    <iconset resource="other/qss.qrc">
+     <normaloff>:/image/zoom_in.png</normaloff>:/image/zoom_in.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="Smaller">
+   <property name="icon">
+    <iconset resource="other/qss.qrc">
+     <normaloff>:/image/zoom_out.png</normaloff>:/image/zoom_out.png</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="Period">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>周期</string>
+   </property>
+  </action>
+  <action name="Normal">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>标准</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="other/qss.qrc"/>
+ </resources>
+ <connections/>
+</ui>

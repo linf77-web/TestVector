@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1420</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1420</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPatternFile">
+    <property name="title">
+     <string>向量文件</string>
+    </property>
+    <addaction name="actionStil"/>
+    <addaction name="actionEVCD"/>
+    <addaction name="actionVCD"/>
+   </widget>
+   <widget class="QMenu" name="menuDevices">
+    <property name="title">
+     <string>设备</string>
+    </property>
+    <widget class="QMenu" name="menuDOscilloscope">
+     <property name="title">
+      <string>数字示波器</string>
+     </property>
+     <addaction name="actionSDS6034"/>
+    </widget>
+    <widget class="QMenu" name="menuDCPower">
+     <property name="title">
+      <string>直流电源</string>
+     </property>
+     <addaction name="actionUDP6730"/>
+    </widget>
+    <widget class="QMenu" name="menuSigSource">
+     <property name="title">
+      <string>信号源</string>
+     </property>
+     <addaction name="actionUTG4082"/>
+    </widget>
+    <widget class="QMenu" name="menuELoad">
+     <property name="title">
+      <string>电子负载</string>
+     </property>
+     <addaction name="actionUTL8512"/>
+    </widget>
+    <addaction name="actionDigitalBoard"/>
+    <addaction name="menuSigSource"/>
+    <addaction name="menuDOscilloscope"/>
+    <addaction name="menuDCPower"/>
+    <addaction name="menuELoad"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>工具</string>
+    </property>
+    <addaction name="actionPinMap"/>
+    <addaction name="actionTiming"/>
+    <addaction name="actionPattern"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menuTools"/>
+   <addaction name="menuPatternFile"/>
+   <addaction name="menuDevices"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionStil">
+   <property name="text">
+    <string>STIL</string>
+   </property>
+  </action>
+  <action name="actionEVCD">
+   <property name="text">
+    <string>EVCD</string>
+   </property>
+  </action>
+  <action name="actionVCD">
+   <property name="text">
+    <string>VCD</string>
+   </property>
+  </action>
+  <action name="actionPinMap">
+   <property name="text">
+    <string>PinMap</string>
+   </property>
+  </action>
+  <action name="actionTiming">
+   <property name="text">
+    <string>Timing</string>
+   </property>
+  </action>
+  <action name="actionPattern">
+   <property name="text">
+    <string>Pattern</string>
+   </property>
+  </action>
+  <action name="actionDigitalBoard">
+   <property name="text">
+    <string>数字板卡</string>
+   </property>
+  </action>
+  <action name="actionSDS6034">
+   <property name="text">
+    <string>SDS6034</string>
+   </property>
+  </action>
+  <action name="actionUDP6730">
+   <property name="text">
+    <string>UDP6730</string>
+   </property>
+  </action>
+  <action name="actionUTG4082">
+   <property name="text">
+    <string>UTG4082</string>
+   </property>
+  </action>
+  <action name="actionUTL8512">
+   <property name="text">
+    <string>UTL8512</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
